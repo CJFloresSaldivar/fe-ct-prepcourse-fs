@@ -13,31 +13,34 @@
     text-transform: uppercase;
 }
 .cardo{
-    display: inline-block;
     height: fit-content;
     border: 2px solid black;
-    border-radius:50px;
-    padding: 10px;
-    width:30vw;
-    transition: 1s;
+    border-radius:50px;    
+    width:20vw;
+    min-width: 200px;
+    transition: 3ms;
     margin: auto;
     vertical-align: middle;
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    padding: 1em;
+    align-items: center;    
 }
-.cardo:hover{
-    
+.cardo:hover{    
     border: 3px solid white;
-    padding: .5em .5em .5em .5em;
+    padding: 1.05em ;
 }
-
 #titulo{
     text-align: center;
     font-family: Arial;
     letter-spacing:  1em;
     border: 2px solid azure;
     width: 50vw;
+    min-width: 450px;
     margin: auto;
     padding: 3em;
-    
+    align-items: center;
 }
 h4{
     font-family: arial;
@@ -48,4 +51,25 @@ h2{
 }
 label{
     font-family: arial;
+}
+.pill{
+    width: 1vw;
+    height: 1vw;
+    min-width: 32px;
+    min-height: 32px;
+}
+#cardcontainer{
+    border: 2px solid white;
+    border-radius: 15px;
+    width: 30vw;
+    min-width: 240px;
+    margin: auto;
+    margin-top: 1.5em;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+    min-height: 270px;   
+     
 }
